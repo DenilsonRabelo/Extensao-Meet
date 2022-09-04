@@ -1,0 +1,24 @@
+{
+    "name": "Chamada Meet",
+    "description": "Extenção que salva informações de todas as pessoas na chamada do Meet",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+        "matches" : ["https://meet.google.com/*"],
+        "css" : ["style.css"],
+        "js" : ["content.js"]
+        }
+    ],
+    "action": {
+        "default_icon": {"01" : "1.png" }
+    },
+    "icons": {
+        "01": "./1.png"
+    },
+    "permissions": [
+        "downloads",
+        "scripting"
+    ]
+    
+}
